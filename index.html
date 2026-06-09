@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Agrinho 2026 — Agro Forte, Futuro Sustentável: equilíbrio entre produção e meio ambiente." />
+  <title>Agrinho 2026 — Agro Forte, Futuro Sustentável</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CANVAS DE FUNDO ANIMADO -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ========== NAVEGAÇÃO ========== -->
+  <nav id="navbar">
+    <div class="nav-brand">
+      <span class="brand-agro">Agro</span><span class="brand-dot">·</span><span class="brand-futuro">Futuro</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#tema">Tema</a></li>
+      <li><a href="#pilares">Pilares</a></li>
+      <li><a href="#praticas">Práticas</a></li>
+      <li><a href="#numeros">Números</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#creditos">Créditos</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== HERO / INÍCIO ========== -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Concurso Agrinho 2026 — SENAR-PR / SEED-PR</p>
+      <h1 class="hero-heading">
+        <span class="heading-line">Agro <em>Forte</em>,</span>
+        <span class="heading-line">Futuro <strong>Sustentável</strong></span>
+      </h1>
+      <p class="hero-sub">
+        Equilíbrio entre produção e meio ambiente — o caminho para um Brasil
+        que alimenta o mundo sem destruir a natureza que o sustenta.
+      </p>
+      <div class="hero-actions">
+        <a href="#tema" class="btn btn-gold">Explorar o Tema</a>
+        <a href="#quiz" class="btn btn-ghost">Fazer o Quiz</a>
+      </div>
+    </div>
+
+    <!-- Cards flutuantes de estatística -->
+    <div class="hero-cards">
+      <div class="float-card" id="card1">
+        <span class="float-num" data-target="66" data-suffix="%">0%</span>
+        <span class="float-label">vegetação nativa<br>preservada</span>
+      </div>
+      <div class="float-card" id="card2">
+        <span class="float-num" data-target="27" data-suffix="%">0%</span>
+        <span class="float-label">do PIB é<br>agronegócio</span>
+      </div>
+      <div class="float-card" id="card3">
+        <span class="float-num" data-target="215" data-suffix="mi">0mi</span>
+        <span class="float-label">brasileiros<br>alimentados</span>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-bar"></div>
+    </div>
+  </section>
+
+  <!-- ========== O TEMA ========== -->
+  <section id="tema" class="section-tema">
+    <div class="container">
+      <div class="split-layout">
+        <div class="split-text reveal-left">
+          <p class="label-tag">O Tema</p>
+          <div class="underline-gold"></div>
+          <h2>A força do campo e a saúde do planeta</h2>
+          <p>
+            O Brasil é uma das maiores potências agrícolas do mundo — ao mesmo tempo
+            em que abriga a maior biodiversidade do planeta. O desafio do nosso tempo
+            é produzir mais e melhor, sem destruir o solo, a água e os ecossistemas
+            que sustentam toda essa riqueza.
+          </p>
+          <p>
+            O Agrinho 2026 convida estudantes a refletir sobre como tecnologia,
+            conhecimento e consciência ambiental podem unir produtividade e preservação
+            em um Brasil cada vez mais sustentável.
+          </p>
+          <div class="tema-badges">
+            <span class="badge green">🌿 Produção</span>
+            <span class="badge gold">🌾 Campo</span>
+            <span class="badge earth">🌍 Natureza</span>
+            <span class="badge blue">💧 Água</span>
+          </div>
+        </div>
+        <div class="split-visual reveal-right">
+          <div class="visual-card main-card">
+            <div class="vc-icon">🌱</div>
+            <h3>Por que isso importa?</h3>
+            <p>O agro sustentável garante comida para hoje sem comprometer a terra de amanhã.</p>
+          </div>
+          <div class="visual-card side-card-1">
+            <div class="vc-icon">🚜</div>
+            <p>O Brasil é o maior exportador mundial de soja, carne bovina, café e suco de laranja.</p>
+          </div>
+          <div class="visual-card side-card-2">
+            <div class="vc-icon">🦜</div>
+            <p>O país abriga mais de 120 mil espécies de animais — 10% de toda a fauna do planeta.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PILARES ========== -->
+  <section id="pilares" class="section-pilares">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="label-tag">Os Pilares</p>
+        <div class="underline-gold center"></div>
+        <h2>Equilíbrio entre dois mundos</h2>
+        <p class="section-sub">
+          Agronegócio e natureza não precisam ser opostos —
+          juntos formam a base de um futuro próspero.
+        </p>
+      </div>
+
+      <div class="pilares-balance">
+        <!-- Lado Agro -->
+        <div class="balance-block agro reveal-left">
+          <div class="bb-header">
+            <span class="bb-emoji">🌾</span>
+            <h3>Agronegócio</h3>
+          </div>
+          <ul class="bb-list">
+            <li>Segurança alimentar nacional e global</li>
+            <li>Geração de empregos no campo</li>
+            <li>Superávit comercial do Brasil</li>
+            <li>Desenvolvimento de comunidades rurais</li>
+            <li>Pesquisa e inovação agropecuária</li>
+            <li>Produção de bioenergia renovável</li>
+          </ul>
+        </div>
+
+        <!-- Centro -->
+        <div class="balance-center reveal">
+          <div class="balance-ring">
+            <span class="ring-text">EQUI<br>LÍBRIO</span>
+          </div>
+          <div class="balance-arrows">
+            <span>&#8596;</span>
+          </div>
+        </div>
+
+        <!-- Lado Natureza -->
+        <div class="balance-block natureza reveal-right">
+          <div class="bb-header">
+            <span class="bb-emoji">🌳</span>
+            <h3>Meio Ambiente</h3>
+          </div>
+          <ul class="bb-list">
+            <li>Preservação das florestas nativas</li>
+            <li>Proteção dos recursos hídricos</li>
+            <li>Manutenção da fertilidade do solo</li>
+            <li>Redução de emissões de carbono</li>
+            <li>Conservação da fauna e flora</li>
+            <li>Combate às mudanças climáticas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRÁTICAS SUSTENTÁVEIS ========== -->
+  <section id="praticas" class="section-praticas">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="label-tag">Soluções</p>
+        <div class="underline-gold center"></div>
+        <h2>Práticas que transformam o campo</h2>
+        <p class="section-sub">
+          Tecnologias e métodos que já provam: produzir muito e preservar
+          a natureza são objetivos que caminham juntos.
+        </p>
+      </div>
+
+      <!-- Tabs interativas (JS controla qual aparece) -->
+      <div class="tabs-wrap">
+        <div class="tabs-nav" id="tabsNav">
+          <button class="tab-btn active" data-tab="0">ILPF</button>
+          <button class="tab-btn" data-tab="1">Irrigação</button>
+          <button class="tab-btn" data-tab="2">Precisão</button>
+          <button class="tab-btn" data-tab="3">Solo</button>
+          <button class="tab-btn" data-tab="4">Florestal</button>
+          <button class="tab-btn" data-tab="5">Energia</button>
+        </div>
+        <div class="tabs-content" id="tabsContent">
+
+          <div class="tab-panel active" data-panel="0">
+            <div class="panel-icon">🌿</div>
+            <div class="panel-body">
+              <h3>Integração Lavoura-Pecuária-Floresta</h3>
+              <p>
+                Sistema que combina criação animal, cultivo agrícola e árvores no
+                mesmo espaço. Recupera solos degradados e aumenta produtividade
+                sem precisar desmatar novas áreas. É um dos sistemas mais
+                completos e sustentáveis já desenvolvidos para o campo brasileiro.
+              </p>
+              <div class="panel-stats">
+                <div class="ps-item">
+                  <strong>+30%</strong>
+                  <span>de produtividade</span>
+                </div>
+                <div class="ps-item">
+                  <strong>0</strong>
+                  <span>novas áreas desmatadas</span>
+                </div>
+                <div class="ps-item">
+                  <strong>3em1</strong>
+                  <span>usos do mesmo solo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="1">
+            <div class="panel-icon">💧</div>
+            <div class="panel-body">
+              <h3>Irrigação por Gotejamento</h3>
+              <p>
+                Tecnologia que entrega água diretamente à raiz da planta,
+                reduzindo o desperdício em até 70% comparado à irrigação
+                convencional. Fundamental em regiões semiáridas e essencial
+                para o uso racional dos recursos hídricos no campo.
+              </p>
+              <div class="panel-stats">
+                <div class="ps-item">
+                  <strong>70%</strong>
+                  <span>menos desperdício</span>
+                </div>
+                <div class="ps-item">
+                  <strong>+40%</strong>
+                  <span>na produção</span>
+                </div>
+                <div class="ps-item">
+                  <strong>24h</strong>
+                  <span>funcionamento automático</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="2">
+            <div class="panel-icon">🛰️</div>
+            <div class="panel-body">
+              <h3>Agricultura de Precisão</h3>
+              <p>
+                Uso de drones, sensores IoT e imagens de satélite para monitorar
+                plantações em tempo real. Permite aplicar fertilizantes, defensivos
+                e água somente onde e quando necessário, reduzindo custos,
+                contaminação do solo e impacto ambiental.
+              </p>
+              <div class="panel-stats">
+                <div class="ps-item">
+                  <strong>-50%</strong>
+                  <span>uso de defensivos</span>
+                </div>
+                <div class="ps-item">
+                  <strong>GPS</strong>
+                  <span>precisão centimétrica</span>
+                </div>
+                <div class="ps-item">
+                  <strong>IA</strong>
+                  <span>análise de dados</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="3">
+            <div class="panel-icon">♻️</div>
+            <div class="panel-body">
+              <h3>Plantio Direto e Compostagem</h3>
+              <p>
+                O plantio direto preserva a estrutura e os micro-organismos do
+                solo, reduzindo a erosão em até 90%. A compostagem transforma
+                resíduos orgânicos em adubo natural, devolvendo nutrientes sem
+                o uso de fertilizantes químicos.
+              </p>
+              <div class="panel-stats">
+                <div class="ps-item">
+                  <strong>-90%</strong>
+                  <span>de erosão do solo</span>
+                </div>
+                <div class="ps-item">
+                  <strong>+CO₂</strong>
+                  <span>sequestrado no solo</span>
+                </div>
+                <div class="ps-item">
+                  <strong>PR</strong>
+                  <span>referência nacional</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="4">
+            <div class="panel-icon">🌲</div>
+            <div class="panel-body">
+              <h3>Reflorestamento de APPs</h3>
+              <p>
+                As Áreas de Preservação Permanente protegem matas ciliares,
+                nascentes e encostas — obrigatórias pelo Código Florestal.
+                Seu reflorestamento melhora a qualidade da água, regula o clima
+                local e protege a biodiversidade que suporta a produção agrícola.
+              </p>
+              <div class="panel-stats">
+                <div class="ps-item">
+                  <strong>-80%</strong>
+                  <span>desmatamento Amazônia</span>
+                </div>
+                <div class="ps-item">
+                  <strong>APPs</strong>
+                  <span>proteção legal</span>
+                </div>
+                <div class="ps-item">
+                  <strong>+H₂O</strong>
+                  <span>qualidade dos rios</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="5">
+            <div class="panel-icon">☀️</div>
+            <div class="panel-body">
+              <h3>Energia Solar no Campo</h3>
+              <p>
+                Propriedades rurais que geram sua própria eletricidade com painéis
+                solares reduzem custos operacionais, eliminam emissões de CO₂ e
+                tornam-se independentes de combustíveis fósseis. O Brasil tem um
+                dos maiores potenciais solares do planeta.
+              </p>
+              <div class="panel-stats">
+                <div class="ps-item">
+                  <strong>0</strong>
+                  <span>emissão de CO₂</span>
+                </div>
+                <div class="ps-item">
+                  <strong>-60%</strong>
+                  <span>na conta de energia</span>
+                </div>
+                <div class="ps-item">
+                  <strong>25+</strong>
+                  <span>anos de durabilidade</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NÚMEROS ========== -->
+  <section id="numeros" class="section-numeros">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="label-tag">Dados</p>
+        <div class="underline-gold center"></div>
+        <h2>O Agro Brasileiro em Números</h2>
+      </div>
+
+      <div class="numeros-grid">
+        <!-- Gráfico de barras -->
+        <div class="chart-card reveal-left">
+          <p class="chart-heading">Uso do Território Brasileiro</p>
+          <div class="bar-list" id="barList">
+            <div class="b-row">
+              <div class="b-info">
+                <span class="b-name">Vegetação Nativa</span>
+                <span class="b-val">66%</span>
+              </div>
+              <div class="b-track">
+                <div class="b-fill green" data-w="66"></div>
+              </div>
+            </div>
+            <div class="b-row">
+              <div class="b-info">
+                <span class="b-name">Pastagens</span>
+                <span class="b-val">20%</span>
+              </div>
+              <div class="b-track">
+                <div class="b-fill gold" data-w="20"></div>
+              </div>
+            </div>
+            <div class="b-row">
+              <div class="b-info">
+                <span class="b-name">Lavouras</span>
+                <span class="b-val">8%</span>
+              </div>
+              <div class="b-track">
+                <div class="b-fill green" data-w="8"></div>
+              </div>
+            </div>
+            <div class="b-row">
+              <div class="b-info">
+                <span class="b-name">Áreas Urbanas</span>
+                <span class="b-val">1%</span>
+              </div>
+              <div class="b-track">
+                <div class="b-fill gold" data-w="1"></div>
+              </div>
+            </div>
+            <div class="b-row">
+              <div class="b-info">
+                <span class="b-name">Outros usos</span>
+                <span class="b-val">5%</span>
+              </div>
+              <div class="b-track">
+                <div class="b-fill green" data-w="5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Big numbers -->
+        <div class="bignums reveal-right">
+          <div class="bignum-item">
+            <span class="bignum-val counter" data-target="27" data-suffix="%">0%</span>
+            <p class="bignum-label">do PIB brasileiro vem do agronegócio</p>
+          </div>
+          <div class="bignum-item">
+            <span class="bignum-val counter" data-target="66" data-suffix="%">0%</span>
+            <p class="bignum-label">do território nacional tem vegetação nativa</p>
+          </div>
+          <div class="bignum-item">
+            <span class="bignum-val counter" data-target="5" data-suffix="º">0º</span>
+            <p class="bignum-label">maior produtor agropecuário do mundo</p>
+          </div>
+          <div class="bignum-item">
+            <span class="bignum-val counter" data-target="120" data-suffix="mil">0mil</span>
+            <p class="bignum-label">espécies animais no Brasil</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linha do tempo -->
+      <div class="timeline reveal">
+        <p class="chart-heading" style="margin-bottom: 2rem;">Marcos da Sustentabilidade Rural Brasileira</p>
+        <div class="tl-track">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <p class="tl-year">1965</p>
+            <p class="tl-text">Primeiro Código Florestal Brasileiro</p>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <p class="tl-year">1988</p>
+            <p class="tl-text">Constituição — Cap. do Meio Ambiente</p>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <p class="tl-year">2004</p>
+            <p class="tl-text">Início do combate ao desmatamento na Amazônia</p>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <p class="tl-year">2012</p>
+            <p class="tl-text">Novo Código Florestal com APPs e RL</p>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <p class="tl-year">2023</p>
+            <p class="tl-text">Brasil zera o desmatamento na Amazônia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== QUIZ ========== -->
+  <section id="quiz" class="section-quiz">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="label-tag">Teste seus conhecimentos</p>
+        <div class="underline-gold center"></div>
+        <h2>Quiz Agrinho 2026</h2>
+        <p class="section-sub">5 perguntas sobre agro sustentável. Você sabe?</p>
+      </div>
+
+      <div class="quiz-container reveal">
+        <!-- Tela de início -->
+        <div class="quiz-start" id="quizStart">
+          <span class="qs-icon">🌾</span>
+          <h3>Pronto para o desafio?</h3>
+          <p>Teste o que você aprendeu sobre o equilíbrio entre produção e meio ambiente.</p>
+          <button class="btn btn-gold" id="btnStartQuiz">Começar Quiz</button>
+        </div>
+
+        <!-- Tela de pergunta -->
+        <div class="quiz-question-wrap hidden" id="quizQuestionWrap">
+          <div class="qz-top">
+            <span class="qz-counter" id="qzCounter">1 / 5</span>
+            <div class="qz-progress">
+              <div class="qz-bar" id="qzBar"></div>
+            </div>
+            <span class="qz-score" id="qzScore">0 pts</span>
+          </div>
+          <p class="qz-question" id="qzQuestion">Pergunta aqui</p>
+          <div class="qz-options" id="qzOptions"></div>
+          <p class="qz-feedback" id="qzFeedback"></p>
+          <button class="btn btn-gold hidden" id="btnNext">Próxima →</button>
+        </div>
+
+        <!-- Tela de resultado -->
+        <div class="quiz-result hidden" id="quizResultWrap">
+          <span class="qr-icon" id="qrIcon">🏆</span>
+          <h3 id="qrTitle">Parabéns!</h3>
+          <p class="qr-score" id="qrScore">5 / 5</p>
+          <p class="qr-msg" id="qrMsg">Mensagem aqui</p>
+          <div class="qr-detail" id="qrDetail"></div>
+          <button class="btn btn-gold" id="btnRestart">Jogar novamente 🔄</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CALL TO ACTION ========== -->
+  <section class="section-cta">
+    <div class="container">
+      <div class="cta-box reveal">
+        <span class="cta-icon">🌍</span>
+        <h2>O futuro começa com suas <em>escolhas</em></h2>
+        <p>
+          Cada estudante, cada família e cada produtor rural pode contribuir para um
+          Brasil que produz com responsabilidade e preserva o que há de mais precioso:
+          a natureza que sustenta toda a vida.
+        </p>
+        <div class="cta-steps">
+          <div class="cta-step">
+            <span>📚</span>
+            <p>Aprenda</p>
+          </div>
+          <div class="cta-arrow">→</div>
+          <div class="cta-step">
+            <span>💡</span>
+            <p>Reflita</p>
+          </div>
+          <div class="cta-arrow">→</div>
+          <div class="cta-step">
+            <span>🗣️</span>
+            <p>Compartilhe</p>
+          </div>
+          <div class="cta-arrow">→</div>
+          <div class="cta-step">
+            <span>🌱</span>
+            <p>Transforme</p>
+          </div>
+        </div>
+        <div class="cta-btns">
+          <button class="btn btn-gold" id="btnTheme">🌙 Modo Escuro</button>
+          <a href="#inicio" class="btn btn-ghost">↑ Voltar ao início</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CRÉDITOS ========== -->
+  <footer id="creditos">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Sobre o Projeto</h4>
+          <p>Site desenvolvido para o Concurso Agrinho 2026, Subcategoria 3 — Programação Front-End, promovido pelo SENAR-PR em parceria com a SEED-PR.</p>
+          <p class="footer-tema">"Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente."</p>
+        </div>
+        <div class="footer-col">
+          <h4>Tecnologias</h4>
+          <ul class="footer-list">
+            <li>✅ HTML5 — estrutura semântica</li>
+            <li>✅ CSS3 — Grid, Flexbox, Media Queries</li>
+            <li>✅ JavaScript puro — DOM, Canvas, IntersectionObserver</li>
+            <li>✅ Sem bibliotecas ou frameworks externos</li>
+            <li>✅ CSS e JS em arquivos separados</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Créditos</h4>
+          <ul class="footer-credits">
+            <li>
+              <span class="credit-icon">🤖</span>
+              <div>
+                <strong>Claude (Anthropic)</strong>
+                <p>Inteligência Artificial utilizada como apoio na criação e estruturação do código HTML, CSS e JavaScript deste projeto.</p>
+              </div>
+            </li>
+            <li>
+              <span class="credit-icon">📊</span>
+              <div>
+                <strong>Dados e Informações</strong>
+                <p>IBGE, MAPA (Ministério da Agricultura), SENAR-PR e fontes públicas do governo federal.</p>
+              </div>
+            </li>
+            <li>
+              <span class="credit-icon">🎨</span>
+              <div>
+                <strong>Ícones</strong>
+                <p>Emojis nativos do sistema operacional — sem licença necessária.</p>
+              </div>
+            </li>
+            <li>
+              <span class="credit-icon">🔤</span>
+              <div>
+                <strong>Tipografia</strong>
+                <p>Georgia e system-ui — fontes nativas, sem importação externa.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Agrinho 2026 — SENAR-PR / Sistema FAEP</p>
+        <p>Desenvolvido com HTML, CSS e JavaScript puro &nbsp;|&nbsp; Subcategoria 3 — Ensino Médio</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
