@@ -6,7 +6,7 @@
 // =====================================================
 
 // ── 1. CANVAS ANIMADO ─────────────────────────────────────────────────
-// Recria o efeito visual estilo p5.js usando canvas nativo do HTML5
+// Grade hexagonal + partículas conectadas usando canvas nativo do HTML5
 
 var canvas = document.getElementById("bg-canvas");
 var ctx = canvas.getContext("2d");
@@ -177,7 +177,7 @@ btnTheme.addEventListener("click", function () {
     // Adiciona classe ao body — CSS aplica as variáveis do modo claro
     document.body.classList.add("light");
     // Manipula o textContent do botão via DOM
-    btnTheme.textContent = "☀️ Modo Escuro";
+    btnTheme.textContent = "☀️ Modo Claro";
   } else {
     document.body.classList.remove("light");
     btnTheme.textContent = "🌙 Modo Escuro";
@@ -463,7 +463,7 @@ function responder(e) {
   // Desabilita todos os botões e marca correto/errado via classList
   for (var i = 0; i < bots.length; i++) {
     bots[i].disabled = true;
-    if (i === p.ok)                          { bots[i].classList.add("correct"); }
+    if (i === p.ok)                             { bots[i].classList.add("correct"); }
     else if (i === escolha && escolha !== p.ok) { bots[i].classList.add("wrong"); }
   }
 
@@ -511,7 +511,7 @@ function mostrarResultado() {
   // Altera o placar via textContent
   qrScore.textContent = qPontos + " de " + total + " corretas  (" + pct + "%)";
 
-  // Define ícone, título e mensagem com base na pontuação (if/else com variáveis)
+  // Define ícone, título e mensagem com base na pontuação
   var icone, titulo, msg;
 
   if (qPontos === total) {

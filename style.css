@@ -267,13 +267,39 @@ body {
   border-color: rgba(76, 175, 80, 0.4);
 }
 
-.float-num {
-  font-family: Georgia, serif;
+/* ── CORREÇÃO DO BUG DE FONTE ──
+   Garante que os números dos cards e stats usem
+   sempre a fonte do sistema, sem ligaduras ou
+   substituições indesejadas (ex: "3em1" virando
+   caractere estranho). font-variant-numeric desliga
+   ligaduras numéricas que causam renderizações bugadas.
+*/
+.float-num,
+.bignum-val,
+.ps-item strong,
+.counter {
+  font-family: Georgia, "Times New Roman", serif;
+  font-variant-numeric: normal;
+  font-feature-settings: normal;
+  -webkit-font-smoothing: antialiased;
   font-size: 2.4rem;
   font-weight: 700;
   color: var(--c-gold);
   line-height: 1;
   min-width: 90px;
+}
+
+/* ps-item strong tem tamanho próprio */
+.ps-item strong {
+  font-size: 1.5rem;
+  min-width: auto;
+}
+
+/* bignum-val tem tamanho próprio */
+.bignum-val {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .float-label {
@@ -610,14 +636,6 @@ h2 {
   gap: 0.15rem;
 }
 
-.ps-item strong {
-  font-family: Georgia, serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--c-gold);
-  line-height: 1;
-}
-
 .ps-item span {
   font-size: 0.72rem;
   color: var(--c-pale);
@@ -703,16 +721,6 @@ h2 {
 .bignum-item:hover {
   border-color: rgba(76,175,80,0.35);
   transform: translateY(-3px);
-}
-
-.bignum-val {
-  font-family: Georgia, serif;
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: var(--c-gold);
-  display: block;
-  line-height: 1;
-  margin-bottom: 0.5rem;
 }
 
 .bignum-label {
